@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>岗位分析详情</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header s-header--blog">
+        <div class="row">
+
+            <div class="s-header__logo">
+                <a href="index.html">
+                    <img src="images/rxyy.png" alt="Homepage">
+                </a>
+            </div>
+
+            <nav class="s-header__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="blog.html">Journal</a></li>
+                    <li><a class="smoothscroll" href="#comment-start">comment</a></li>
+                    <li><a class="smoothscroll" href="#test-start">analzy</a></li>
+                </ul>
+            </nav>
+
+            <a class="s-header__menu-toggle" href="#0" title="Menu">
+                <span class="s-header__menu-icon"></span>
+            </a>
+
+            <!-- <div ID="res" class="s-header__search-block">
+
+                <div class="s-header__search">
+                    <h1>
+                        lalala
+                    </h1>
+                </div>
+
+
+                <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
+
+
+
+
+            </div> -->
+            <!-- end s-header__search-block -->
+            <div class="s-header__search-block">
+
+                <div class="s-header__search">
+                    <form role="search" method="get" class="s-header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="search-field" value="" name="s" title="Search for:">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+
+                    <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
+                </div>
+
+                <a class="s-header__search-trigger" href="#0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M10 18a7.952 7.952 0 004.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0018 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </div> <!-- end row -->
+    </header> <!-- end s-header -->
+
+
+    <!-- blog content
+    ================================================== -->
+    <div class="blog-content">
+
+        <div class="row blog-post-wrap">
+            <div class="column large-12">
+
+                <article class="blog-post">
+
+                    <div class="blog-post__header">
+                        <h1 class="blog-post__title">职位参考<br>具体分析与预测
+                        </h1>
+
+                        <div class="blog-post__meta">
+
+                            <div class="blog-post__date"></div>
+
+                            <p class="blog-post__cat">
+                                <a href="category.html">#多元回归分析</a>
+                                <a href="category.html">#决策树模型</a>
+                                <a href="category.html">#蒙特卡洛模拟法</a>
+                            </p>
+
+                        </div>
+                    </div> <!-- blog-post__header -->
+
+
+
+
+
+                    <div class="blog-post__thumb">
+
+                        <div class="com-info">
+                            <div class="com-chart">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- blog-post__thumb -->
+
+                    <div class="blog-post__content">
+
+                        <p class="lead drop-cap">
+                            我们引入解释变量工作经验（x1），学历水平（x2），薪资水平（y），进行了二元回归分析并进行检验。
+                            运用Matlab提供的内置函数lsqcurvefit和梯度迭代法，进行了多元非线性函数拟合。
+                            结果可以拟合为y = x1^2 / 9 * 5 + x2^3 * 3;
+                        </p>
+
+
+
+
+                        <!-- <img src="images/wheel-1000.jpg" srcset="images/wheel-2000.jpg 2000w, 
+                                     images/wheel-1000.jpg 1000w, 
+                                     images/wheel-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt=""> -->
+
+
+
+                        <h1 id="comment-start">公司评论指数</h1>
+
+                        <p>
+                            技术关键词：#LTP情感分析
+                        </p>
+
+                        <blockquote>
+                            <p>
+                                在这里我们使用了基于Python的LTP句法分析，并按照0、0-10、10-100、100-1000、1000+
+                                进行了情感倾向的量化分析，分析了几大互联网公司从2014年以来的评论情感变化，共七个分档的评论所占比例，
+                                以及面试官、公司面貌、职位描述三个评分指标随年份增长的变化。
+                            </p>
+                            <cite>这里写一个技术分工管一鸣凑数</cite>
+                        </blockquote>
+                        <div class="com-info">
+                            <div class="commentbyyear-chart">
+
+                            </div>
+                        </div>
+
+                        <p>
+                            从地域上看，MCN企业大部分集中在一线城市，占比43.6%。新一线城市中，杭州位居首位，占比达8.5%，仅次于深圳，其次是成都,占比7.0%。
+
+                            此外，疫情催生的“宅经济”背景下，生鲜电商蓬勃发展。据天眼查数据显示，2020年电商行业的企业数同比增长69%，生鲜电商企业数同比增长17%。2020年生鲜电商蓬勃发展，自2月起招聘需求持续走高，至6月达到顶峰。2020年6月生鲜电商人才招聘需求是去年同期的2.2倍。
+
+                            疫情推动生鲜电商发展，社区团购模式也逐渐“回春”，各大社区团购平台于1月到8月集中招聘技术人才，10月起市场、运营人才需求上涨，推动生鲜电商招聘需求在11月再达高峰。生鲜电商行业招聘需求最高的岗位为运营、采购，“团长”相关职位发布量是2019年的4倍。
+                        </p>
+
+                        <h3>最有潜力的公司+职业</h3>
+
+                        <p>
+                            根据我们爬取的互联网公司人才需求量及简历投递数量、招聘投入指数、薪资增长速度。
+                            以及国家统计局发布的城市综合发展指数，
+                            中国互联网协会发布的《中国互联网企业综合实力研究报告（2020）》报告排名，
+                            以及职位平均薪酬得出的职位推荐指数，以及未来方向预测趋势。
+                            我们给出了朝阳产业公司和其内部最有发展潜力的几个职位推荐
+                            并逐个予以评分。
+
+                        </p>
+                        <div class="com-info">
+                            <div class="sun-chart">
+
+                            </div>
+                        </div>
+
+                        <!-- <pre><code class="language-css"> -->
+                        <!-- code {
+        font-size: 1.4rem;
+        margin: 0 .2rem;
+        padding: .2rem .6rem;
+        white-space: nowrap;
+        background: #F1F1F1;
+        border: 1px solid #E1E1E1;	
+        border-radius: 3px;
+    }
+</code></pre> -->
+
+
+
+                        <!-- <p>
+                            Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                            corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                            similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                            venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim
+                            cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing
+                            in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+                        </p> -->
+
+                        <!-- <ul>
+                            <li>Donec nulla non metus auctor fringilla.
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </li>
+                            <li>Donec nulla non metus auctor fringilla.</li>
+                            <li>Donec nulla non metus auctor fringilla.</li>
+                        </ul> -->
+
+                        <p>
+                            2020年度中，互联网大厂在人才需求和投入上依旧势头迅猛，
+                            相比于2019年，字节跳动人才需求量增长66%，阿里巴巴增长65%，腾讯、美团、滴滴的涨幅分别为33%、31%、17%。
+                            从薪资来看，阿里巴巴平均月薪29440元，排名第一。
+                            字节跳动薪资涨幅12%，人才需求量及简历投递热度均排名第一，
+                            成为“涨薪最快最受欢迎”的大厂。
+                        </p>
+
+                        <!-- <p class="blog-post__tags">
+                            <span class="blog-post__tags-title">Post tags</span>
+
+                            <span class="blog-post__tag-list">
+                                <a href="#0">orci</a>
+                                <a href="#0">lectus</a>
+                                <a href="#0">varius</a>
+                                <a href="#0">turpis</a>
+                            </span>
+                        </p> -->
+
+                    </div> <!-- end blog-post__content -->
+
+                </article> <!-- blog post -->
+
+            </div> <!-- column -->
+        </div> <!-- end blog-post-wrap -->
+    </div>
+    <!-- 
+        <div class="blog-post-nav-wrap">
+            <div class="row blog-post-nav">
+                <div class="column large-6 tab-12 blog-post-nav__prev">
+                    <a href="#0" rel="prev">
+                        <span>Prev</span>
+                        The Pomodoro Technique Really Works.
+                    </a>
+                </div>
+                <div class="column large-6 tab-12 blog-post-nav__next">
+                    <a href="#0" rel="next">
+                        <span>Next</span>
+                        How Imagery Drives User Experience.
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    <!-- end blog-post-nav-wrap -->
+
+
+    <!-- comments
+        ================================================== -->
+    <div class="comments-wrap">
+
+        <div id="comments" class="row">
+            <div class="column">
+
+                <h3>
+                    <font color="white">系统架构</font>
+                </h3>
+                <div class="job-recommend">
+
+                </div>
+
+                <p>
+                    求职推荐系统主要包含两个部分:1.推荐用户要求的职位 2.分析该职位的录取率
+                    运用了matlab中的sklearn库进行模型训练，将录取率分为：建议放弃：[0,0.3]需要努力呀！：[0.3,0.6]；已经超过大多数人啦！: [0.6,0.8]；
+                    十拿九稳了！：[0.8-1.0]四个区间
+                    职业发展前景分为职业需求人数，增长率两部分，通过对过去几年每个岗位的招聘人数与实际报名人数进行线性拟合得到。
+
+                </p>
+
+                <img src="images/job_recommend.png" alt="job_recommend" / width="1800px">
+
+
+
+
+                <div class="row comment-respond">
+
+                    <!-- START respond -->
+                    <div id="respond" class="column">
+
+                        <h3 id="test-start">
+                            <font color="white">求职参考系统</font>
+
+                            <span>如果没有完成注册的话点击提交会自动注册账号</span>
+                        </h3>
+
+                        <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
+                            <fieldset>
+                                <div class="form-field">
+                                    <select class="h-full-width h-remove-bottom">
+                                        <option selected>性别</option>
+                                        <option>男</option>
+                                        <option>女</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <input name="cName" id="cName" class="h-full-width h-remove-bottom" placeholder="年龄"
+                                        value="" type="text">
+                                </div>
+                                <div class="form-field">
+                                    <select class="h-full-width h-remove-bottom">
+                                        <option selected>学历</option>
+                                        <option>大专</option>
+                                        <option>本科</option>
+                                        <option>硕士</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <input name="cName" id="cName" class="h-full-width h-remove-bottom"
+                                        placeholder="你的专业" value="" type="text">
+                                </div>
+
+                                <!-- 性别 年龄 学历 专业 工作经验 意向公司 擅长技术 -->
+
+
+                                <div class="form-field">
+                                    <select class="h-full-width h-remove-bottom">
+                                        <option selected>工作经验</option>
+                                        <option>0</option>
+                                        <option>1-3年</option>
+                                        <option>3-5年</option>
+                                        <option>5-7年</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <input name="cEmail" id="cEmail" class="h-full-width h-remove-bottom"
+                                        placeholder="意向公司" value="" type="text">
+                                </div>
+                                <div class="form-field">
+                                    <select class="h-full-width h-remove-bottom">
+                                        <option selected>意向薪酬</option>
+                                        <option>1-3k</option>
+                                        <option>3-7k</option>
+                                        <option>7-10k</option>
+                                        <option>10-15k</option>
+                                        <option>15-20k</option>
+                                        <option>20k+</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <select class="h-full-width h-remove-bottom">
+                                        <option selected>擅长领域</option>
+                                        <option>C++</option>
+                                        <option>C</option>
+                                        <option>人工智能</option>
+                                        <option>大数据</option>
+                                        <option>JAVA</option>
+                                        <option>NET</option>
+                                        <option>更多请写在下方文本框内</option>
+                                    </select>
+                                </div>
+
+                                <div class="message form-field">
+                                    <textarea name="cMessage" id="cMessage" class="h-full-width h-remove-bottom"
+                                        placeholder="其他要求"></textarea>
+                                </div>
+
+
+                                <!-- <input name="submit" id="submit"
+                                        class="btn btn--primary btn-wide btn--large h-full-width" value="Add Comment"
+                                        οnclick="popBox()" type="submit"> -->
+                                <button class="btn btn--primary btn-wide btn--large h-full-width"
+                                    onclick="displayResult()">
+                                    查看结果
+                                </button>
+                                <div id="myModal" class="modal">
+
+                                    <!-- 弹窗内容 -->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p>弹窗中的文本...</p>
+                                    </div>
+
+                                </div>
+
+
+
+                            </fieldset>
+                        </form> <!-- end form -->
+
+                    </div>
+                    <!-- END respond-->
+
+                </div> <!-- end comment-respond -->
+
+            </div> <!-- end comments-wrap -->
+
+        </div> <!-- end blog-content -->
+
+
+        <!-- contact
+    ================================================== -->
+
+
+        <!-- footer
+    ================================================== -->
+
+
+        <!-- Java Script
+    ================================================== -->
+        <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- <script src="js/echartjs/echarts.js"></script> -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/echartjs/china.js"></script> -->
+        <!-- <script src="js/echartjs/myMap.js"></script> -->
+        <script src="js/echartjs/singleblog.js"></script>
+
+
+</body>
+
+</html>
